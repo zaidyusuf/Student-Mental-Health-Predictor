@@ -258,7 +258,7 @@
   <script>
     const openedFromDisk = location.protocol === "file:";
     const localLiveServer = ["localhost", "127.0.0.1"].includes(location.hostname) && location.port !== "8000";
-    const apiBase = new URLSearchParams(location.search).get("api") || (openedFromDisk || localLiveServer ? "http://127.0.0.1:8000" : "");
+    const apiBase = new URLSearchParams(location.search).get("api") || (openedFromDisk || localLiveServer ? "https://student-mental-health-predictor-wuct.onrender.com" : "");
     const apiUrl = (path) => `${apiBase}${path}`;
     const form = document.querySelector("#prediction-form");
     const statusBox = document.querySelector("#service-status");
